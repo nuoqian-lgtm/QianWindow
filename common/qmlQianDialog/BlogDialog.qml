@@ -93,7 +93,7 @@ DropPopup {
                         }
 
                         YaheiText {
-                            text: `最新版本视频地址： <font color="${accentColorStr}"><a href="https://space.bilibili.com/82157618/channel/seriesdetail?sid=3264958&ctype=0">B站演示入口</a></font>`
+                            text: `最新版本视频地址： <font color="${accentColorStr}"><a href="https://space.bilibili.com/82157618/channel/collectiondetail?sid=1360570&ctype=0">B站演示入口</a></font>`
                             font.pixelSize: 15
                             color: tingeColor
                             onLinkActivated:  Qt.openUrlExternally(link);
