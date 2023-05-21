@@ -31,7 +31,7 @@ DropPopup {
     property alias icon: _icon.source
 
 
-    function dialogOpen(type, d1, d2) {
+    function dialogOpen(type, _text, _title = "") {
 
         icon = type == SkinQianDialog.DialogQuestion  ? typeQuestion :
                             type == SkinQianDialog.DialogError  ? typeError :
@@ -39,15 +39,9 @@ DropPopup {
 
         rejectVisible =  type == SkinQianDialog.DialogQuestion ? true : false
 
-        if(arguments.length == 3) {
-            title = d1
-            text = d2
-            open()
-        } else if(arguments.length == 2) {
-            title = ""
-            text = d1
-            open()
-        }
+        title = _title
+        text = _text
+        open()
     }
 
 

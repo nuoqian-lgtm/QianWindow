@@ -102,7 +102,7 @@ Item {
                         font.pixelSize:  14
                         backRadius: 4
                         text: "带标题询问"
-                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogQuestion, "任务清理", "是否需要清理任务？")
+                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogQuestion, "是否需要清理任务？", "任务清理")
                     }
                 }
 
@@ -120,7 +120,7 @@ Item {
                         backRadius: 4
                         text: "带标题成功"
                         bckcolor: "#4785FF"
-                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogSuccess, "任务清理", "任务清理完成! 请重启软件生效!")
+                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogSuccess, "任务清理完成! 请重启软件生效!", "任务清理")
                     }
                 }
                 RowLayout {
@@ -137,7 +137,7 @@ Item {
                         backRadius: 4
                         text: "带标题提示"
                         bckcolor: "#16B7BF"
-                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogInformation, "任务清理", "当前没有任务可以清理!")
+                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogInformation, "当前没有任务可以清理!", "任务清理")
                     }
                 }
 
@@ -155,7 +155,7 @@ Item {
                         backRadius: 4
                         text: "带标题错误"
                         bckcolor: "#EC3315"
-                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogError, "任务清理", "清理任务失败,请检查用户权限!")
+                        onClicked: skinQianDialog.dialogOpen(SkinQianDialog.DialogError, "清理任务失败,请检查用户权限!", "任务清理")
                     }
                 }
 
