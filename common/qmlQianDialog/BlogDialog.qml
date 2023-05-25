@@ -23,8 +23,10 @@ DropPopup {
     }
 
     z: 100
-    width: contentLayout.width-80 < 340 ? 340 : contentLayout.width + 80
-    height: !title.length ? dialogLayout.height + 20 : dialogLayout.height + 40
+
+    width: contentLayout.width+80 < 340 ? 340 : contentLayout.width + 80
+    height: !title.length ? contentLayout.height + 60 : contentLayout.height + 80
+
 
     property alias title: _title.text
     property alias icon: _icon.source
@@ -81,7 +83,7 @@ DropPopup {
                 Layout.margins: 20
                 Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                 RowLayout {
-                        Layout.topMargin: 20
+                        Layout.topMargin: title != "" ? 0 : 20
                         Layout.bottomMargin: 20
                         Image {
                             id: _icon
